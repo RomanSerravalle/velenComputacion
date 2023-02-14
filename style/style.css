@@ -616,7 +616,7 @@ footer {
         margin: 0 auto;
         filter: drop-shadow(5px 5px 5px rgb(24, 24, 24));
         transition: all 0.5s;
-        border-radius: 1cm;
+        border-radius: 0.5cm;
     }
 
     .serviceProduct div {
@@ -712,4 +712,5 @@ footer {
         margin-top: 10vw;
     }
 
+    
 }
