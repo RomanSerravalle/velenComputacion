@@ -25,21 +25,12 @@ ul li {
     margin: 20px 80px 20px 20px;
 }
 
-nav ul {
-    font-size: 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
 nav ul li {
     font-weight: bold;
     font-size: 28px;
     padding: 20px;
     border-radius: 1cm;
 }
-
 
 nav ul li a {
     padding: 10px;
@@ -137,6 +128,11 @@ section {
     margin-right: 40px;
     margin-left: 40px;
     object-fit: cover;
+}
+
+.px-wide{
+    width: 80%;
+    margin: auto;
 }
 
 /* products */
@@ -330,11 +326,6 @@ footer {
 
 @media screen and (max-width: 1440px) {
 
-    .header {
-        width: 100%;
-        margin: 0 auto;
-    }
-
     h1 {
         font-size: 5vw;
     }
@@ -350,14 +341,13 @@ footer {
 
     nav ul li {
         margin: 0 auto;
-        margin-bottom: 10px;
-        font-size: 2vw;
+        margin-bottom: 0px;
         text-align: center;
     }
 
     nav ul li img {
-        height: 6vw;
-        width: 14vw;
+        height: 5vw;
+        width: 12vw;
     }
 
     .serviceProduct div {
@@ -433,32 +423,9 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-
-    header {
-        width: 80%;
-        margin: 0 auto;
-    }
-
     body {
         color: white;
         background: rgb(34, 34, 34)
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0 auto;
-        margin-bottom: 20px;
-        font-size: 8vw;
-        text-align: center;
-    }
-
-    nav ul li img {
-        height: 10%;
-        width: 100%;
     }
 
     h1 {
@@ -574,32 +541,9 @@ footer {
 
 @media screen and (max-width: 576px) {
 
-
-    header {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     body {
         color: white;
         background: rgb(34, 34, 34)
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0 auto;
-        margin-bottom: 20px;
-        font-size: 8vw;
-        text-align: center;
-    }
-
-    nav ul li img {
-        height: 10%;
-        width: 100%;
     }
 
     h1 {
@@ -712,5 +656,4 @@ footer {
         margin-top: 10vw;
     }
 
-    
 }
