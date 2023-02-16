@@ -7,33 +7,33 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* MOBILE */
+
 /* header */
 
 header {
     background: linear-gradient(180deg, rgb(24, 100, 77) 0%, rgba(161, 255, 227, 1) 61%, rgb(161, 255, 227) 90%);
-    text-align: center;
     border: 3px solid black;
-    margin-bottom: 50px;
+    text-align: center;
 }
 
 header img {
-    width: 240px;
-    height: 100px;
+    width: 150px;
 }
 
 .nav-item {
     list-style-type: none;
     margin: 10px 10px 20px 20px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px;
 }
 
-.nav-link{
+.nav-link {
     border-radius: 0.2cm;
 }
 
-.active:hover{
+.active:hover {
     color: rgb(161, 255, 227);
 }
 
@@ -68,12 +68,11 @@ body {
 
 h1 {
     margin: 25px 0px 25px 0px;
-    font-size: 64px;
+    font-size: 8vw;
 }
 
 h2 {
-    font-size: 48px;
-    margin-bottom: 0px;
+    font-size: 6vw;
 }
 
 .brandsSection {
@@ -86,18 +85,19 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 30px 30px;
+    margin: 0px 1vw 0px 1vw;
+    margin-top: 10vw;
 }
 
 .brandsSection div img {
-    width: 20%;
-    height: 20%;
-    padding: 20px;
+    width: 25%;
+    height: 25%;
+    padding: 1vw;
     margin: 0 auto;
     margin-bottom: 40px;
     filter: drop-shadow(5px 5px 5px rgb(24, 24, 24));
     transition: all 0.5s;
-    border-radius: 1cm;
+    border-radius: 0.5cm;
 }
 
 .brandsSection div img:hover {
@@ -106,21 +106,20 @@ h2 {
 
 /* services */
 
-.px-wide{
-    width: 80%;
+.px-wide {
+    width: 100%;
     margin: auto;
 }
 
-.carousel-inner{
-    border-radius: 1cm;
+.carousel-inner {
+    border-radius: 0.5cm;
     border: 4px solid rgb(161, 255, 227);
     margin-bottom: 50px;
 }
 
-.carousel-item h5{
+.carousel-item h5 {
     font-size: 2rem;
     text-shadow: 5px 10px 5px black;
-
 
 }
 
@@ -132,11 +131,13 @@ h2 {
 }
 
 .productGrid div {
+    width: 80vw;
+    height: 35vh;
     display: flex;
-    margin: 20px;
+    margin: 20px 0px 0px 0px;
     justify-content: center;
     align-items: center;
-    font-size: 64px;
+    font-size: 5vw;
     text-shadow: 5px 10px 5px black;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -156,6 +157,7 @@ h2 {
 .gpu {
     grid-area: gpu;
     background-image: url(../img/product-gpu.jpg);
+    background-size: cover;
 }
 
 .cpu {
@@ -167,6 +169,7 @@ h2 {
 .mother {
     grid-area: mother;
     background-image: url(../img/product-mother.png);
+    background-size: cover;
 }
 
 .storage {
@@ -183,16 +186,19 @@ h2 {
 }
 
 .productGrid {
+    text-align: center;
     margin: 0 auto;
-    margin-top: 80px;
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template-areas:
-        "pc gpu"
-        "cpu mother"
-        "storage peri";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50vh 50vh 50vh;
+        "pc pc"
+        "gpu gpu"
+        "cpu cpu"
+        "mother mother"
+        "storage storage"
+        "peri peri";
+    grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh;
+    justify-items: center;
 }
 
 /* about */
@@ -202,9 +208,11 @@ main {
 }
 
 .aboutText p {
+    margin: 0 auto;
     text-align: center;
-    margin: 20px 250px 50px 250px;
-    font-size: 32px;
+    margin-bottom: 30px;
+    width: 100%;
+    font-size: 4vw;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -216,10 +224,12 @@ main {
 .aboutText h2 {
     text-align: center;
     padding-bottom: 40px;
-    font-size: 32px;
+    font-size: 7vw;
 }
 
 .aboutMap {
+    height: 50vh;
+    width: 85vw;
     margin: 0 auto;
     display: block;
     border: 3px solid rgb(161, 255, 227);
@@ -234,12 +244,18 @@ span {
 /* contact */
 
 .contactForm {
-    margin-left: 300px;
-    margin-right: 300px;
     text-align: center;
-    padding: 50px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    height: 70vh;
+    width: 80vw;
     border: solid rgb(161, 255, 227);
-    border-radius: 100px;
+    border-radius: 0.5cm;
+}
+
+.contactForm legend {
+    font-size: 6vw;
 }
 
 .contactForm fieldset {
@@ -247,9 +263,10 @@ span {
 }
 
 .contactForm input {
-    padding: 5px;
+    padding: 1vw;
     margin: 20px 10px 0px 10px;
     color: white;
+    width: 40vw;
     background-color: rgb(46, 46, 46);
     font-family: 'Montserrat', sans-serif;
     border-radius: 4px;
@@ -257,8 +274,9 @@ span {
 
 .contactForm textarea {
     padding: 5px;
-    margin-top: 20px;
+    margin-top: 5vh;
     color: white;
+    width: 60vw;
     background-color: rgb(46, 46, 46);
     font-family: 'Montserrat', sans-serif;
     border-radius: 4px;
@@ -272,12 +290,12 @@ footer {
     color: black;
     background: linear-gradient(0deg, rgb(24, 100, 77) 0%, rgba(161, 255, 227, 1) 61%, rgb(161, 255, 227) 90%);
     font-family: 'Roboto', sans-serif;
-    margin-top: 100px;
+    margin-top: 8vw;
     border: solid black;
     padding: 40px;
 }
 
-footer a img{
+footer a img {
     transition: all 200ms ease-in-out;
 }
 
@@ -285,294 +303,196 @@ footer a img:hover {
     transform: scale(1.4);
 }
 
-footer .display-6{
+footer .display-6 {
     font-weight: bolder;
     transition: all 200ms ease-in-out;
     padding: 10px;
     border-radius: 0.5cm;
 }
 
-footer .display-6:hover{
+footer .display-6:hover {
     color: white;
-    background-color: rgb(24, 100, 77) ;
+    background-color: rgb(24, 100, 77);
 }
 
-footer .text-light:hover{
+footer .text-light:hover {
     transform: scale(1.5);
 }
 
 
 
-/* MEDIA QUERY 1440px */
 
-@media screen and (max-width: 1440px) {
 
-    h1 {
-        font-size: 5vw;
-    }
+/* TABLET */
 
-    h2 {
-        font-size: 4vw;
-    }
+@media screen and (min-width: 576px) {
 
-    body {
-        color: white;
-        background: rgb(34, 34, 34)
-    }
+    /* services */
 
-    .productGrid {
-        margin: 0 auto;
-    }
-
-    .aboutMap {
-        margin-bottom: 40px;
-    }
-
-    .productGrid div {
-        width: 35vw;
-        font-size: 3vw;
-    }
-
-    .aboutText p {
-        margin: 0 auto;
-        margin-bottom: 30px;
+    .px-wide {
         width: 100%;
-        font-size: 3vw;
-    }
-
-    .contactForm {
-        margin: 0 auto;
-        margin-top: 5vw;
-        margin-bottom: 5vw;
-        padding: 5vw;
-        height: 50vh;
-        width: 60vw;
-        border: solid rgb(161, 255, 227);
-        border-radius: 2cm;
-    }
-
-    .contactForm input {
-        color: white;
-        width: 20vw;
-        background-color: rgb(46, 46, 46);
-        font-family: 'Montserrat', sans-serif;
-        border-radius: 4px;
-    }
-
-    .contactForm textarea {
-        margin-top: 5vw;
-        color: white;
-        height: 15vh;
-        width: 40vw;
-        background-color: rgb(46, 46, 46);
-        font-family: 'Montserrat', sans-serif;
-        border-radius: 4px;
-    }
-
-    footer {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-}
-
-/* MEDIA QUERY 768px */
-
-@media screen and (max-width: 768px) {
-
-    body {
-        color: white;
-        background: rgb(34, 34, 34)
-    }
-
-    h1 {
-        font-size: 8vw;
-    }
-
-    h2 {
-        font-size: 6vw;
-    }
-
-    .brandsSection div img {
-        padding: 1vw;
-        margin: 0 auto;
-        filter: drop-shadow(5px 5px 5px rgb(24, 24, 24));
-        transition: all 0.5s;
-        border-radius: 1cm;
-    }
-
-    .productGrid {
-        text-align: center;
-        margin: 0 auto;
-        display: grid;
-        grid-template-areas:
-            "pc pc"
-            "gpu gpu"
-            "cpu cpu"
-            "mother mother"
-            "storage storage"
-            "peri peri";
-        grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh;
-        justify-items: center;
-    }
-
-    .productGrid div {
-        width: 100%;
-        margin: 20px 0px 20px 0px;
-        font-size: 8vw;
-    }
-
-    .aboutText p {
-        margin: 0 auto;
-        margin-bottom: 30px;
-        width: 100%;
-        font-size: 4vw;
-    }
-
-    .aboutMap {
-        width: 85vw;
-        height: 50vh;
+        margin: auto;
     }
 
 
-    .contactForm {
-        margin: 0 auto;
-        margin-top: 40px;
-        padding: 20px;
-        width: 70vw;
-        height: 50vh;
-        border: solid rgb(161, 255, 227);
-        border-radius: 0.5cm;
-    }
-
-    .contactForm input {
-        padding: 5px;
-        margin: 20px 10px 0px 10px;
-        color: white;
-        width: 30vw;
-        background-color: rgb(46, 46, 46);
-        font-family: 'Montserrat', sans-serif;
-        border-radius: 4px;
-    }
-
-    .contactForm textarea {
-        padding: 5px;
-        margin-top: 5vw;
-        color: white;
-        width: 60vw;
-        background-color: rgb(46, 46, 46);
-        font-family: 'Montserrat', sans-serif;
-        border-radius: 4px;
-
-    }
-
-    footer {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 10vw;
-    }
-
-}
-
-/* MEDIA QUERY 576px */
-
-@media screen and (max-width: 576px) {
-
-    body {
-        color: white;
-        background: rgb(34, 34, 34)
-    }
-
-    h1 {
-        font-size: 8vw;
-    }
-
-    h2 {
-        font-size: 6vw;
-    }
-
-    .brandsSection div img {
-        width: 15vw;
-        padding: 1vw;
-        margin: 0 auto;
-        filter: drop-shadow(5px 5px 5px rgb(24, 24, 24));
-        transition: all 0.5s;
-        border-radius: 0.5cm;
-    }
-
-    .productGrid {
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        display: grid;
-        grid-template-areas:
-            "pc pc"
-            "gpu gpu"
-            "cpu cpu"
-            "mother mother"
-            "storage storage"
-            "peri peri";
-        grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh;
-        justify-items: center;
-    }
+    /* products */
 
     .productGrid div {
         width: 80vw;
-        height: 35vh;
-        margin: 0 auto;
-        margin: 20px 0px 0px 0px;
-        font-size: 5vw;
+        height: 50vh;
     }
 
+    .productGrid {
+        grid-template-rows: 55vh 55vh 55vh 55vh 55vh 55vh;
+    }
+
+    /* about */
+
     .aboutText p {
-        margin: 0 auto;
-        margin-bottom: 30px;
-        width: 100%;
-        font-size: 5vw;
+        width: 90%;
+        font-size: 3vw;
     }
 
     .aboutMap {
-        width: 85vw;
-        height: 30vh;
+        height: 65vh;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    /* products */
+
+    .productGrid div {
+        width: 45vw;
+        height: 60vh;
+        margin: 20px;
+        font-size: 4vw;
+    }
+
+    .productGrid {
+        gap: 3vw;
+        margin: 0 auto;
+        width: 90%;
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+            "pc gpu"
+            "cpu mother"
+            "storage peri";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 60vh 60vh 60vh;
+    }
+
+    /* about */
+
+    .aboutText p {
+        width: 80%;
+    }
+
+    .aboutMap {
+        height: 65vh;
+        width: 70vw;
     }
 
 
+    /* contact */
+
     .contactForm {
-        margin: 0 auto;
-        margin-top: 40px;
+        height: 75vh;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px) {
+
+    /* index */
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    .brandsSection div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 30px 30px;
+    }
+
+    .brandsSection div img {
+        width: 20%;
+        height: 20%;
         padding: 20px;
-        height: 50vh;
-        width: 70vw;
-        border: solid rgb(161, 255, 227);
-        border-radius: 0.5cm;
+        margin: 0 auto;
+        border-radius: 1cm;
+    }
+
+    /* services */
+
+    .px-wide {
+        width: 90%;
+        margin: auto;
+    }
+
+    .carousel-inner {
+        border-radius: 1cm;
+    }
+
+    /* products */
+
+    .productGrid div {
+        width: 40vw;
+        height: 60vh;
+        margin: 20px;
+
+    }
+
+    /* about */
+
+    .aboutText p {
+        width: 60%;
+        margin-bottom: 48px;
+        font-size: 28px;
+    }
+
+    .aboutText h2 {
+        font-size: 48px;
+    }
+
+    .aboutMap {
+        height: 70vh;
+        width: 60vw;
+    }
+
+    /* contact */
+
+    .contactForm {
+        height: 65vh;
+        width: 60vw;
+        padding: 50px;
+        border-radius: 100px;
+    }
+
+    .contactForm legend {
+        font-size: 3vw;
     }
 
     .contactForm input {
-        padding: 1vw;
+        padding: 5px;
         margin: 20px 10px 0px 10px;
-        color: white;
-        width: 30vw;
-        background-color: rgb(46, 46, 46);
-        font-family: 'Montserrat', sans-serif;
         border-radius: 4px;
+        width: 30%;
     }
 
     .contactForm textarea {
         padding: 5px;
-        margin-top: 5vh;
-        color: white;
-        width: 60vw;
-        background-color: rgb(46, 46, 46);
-        font-family: 'Montserrat', sans-serif;
+        margin-top: 20px;
         border-radius: 4px;
+        width: 60%;
     }
-
-    footer {
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 10vw;
-    }
-
-
-    
 }
