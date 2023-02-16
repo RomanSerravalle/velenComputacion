@@ -15,27 +15,30 @@
 <body>
 
     <header id="header">
-        <nav>
-            <ul>
-                <li>
-                    <img src="../img/velen-logo-white.png" alt="Logo de Velen en blanco">
-                </li>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./services.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="./products.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./about.html">Información</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class= "img-fluid" src="../img/velen-logo-white.png" alt="Logo de Velen en blanco"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"  href="./products.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">Información</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contacto</a>
+                        </li>
         </nav>
     </header>
 
@@ -54,29 +57,33 @@
     </section>
 
 
-    <footer class="social">
-        <div>
-            <h2>Nuestras redes</h2>
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <h2 class="text-dark display-5">Nuestras redes</h2>
+        <div class="container pt-4">
+            <section class="mb-4">
+
+                <a class="btn" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i><img src="../img/facebook-icon.svg" alt="Icono de Facebook"></a>
+
+
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i><img src="../img/twitter-icon.svg" alt="Icono de Twitter"></a>
+
+
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-whatsapp"></i><img src="../img/whatsapp-icon.svg" alt="Icono de Whatsapp"></a>
+
+
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i><img src="../img/instagram-icon.svg" alt="Icono de Instagram"></a>
+
+            </section>
+
         </div>
 
         <div>
-            <a href="https://twitter.com/home" target="_blank">
-                <img src="../img/twitter-icon.svg" alt="Icono de Twitter">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="../img/instagram-icon.svg" alt="Icono de Instagram">
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="../img/facebook-icon.svg" alt="Icono de Facebook">
-            </a>
-            <a href="https://web.whatsapp.com" target="_blank">
-                <img src="../img/whatsapp-icon.svg" alt="Icono de Whatsapp">
-            </a>
+            <a class="display-6" href="#header">Arriba</a>
         </div>
-
-        <p>
-            <a href="#header">Arriba</a>
-        </p>
     </footer>
 
 
@@ -87,6 +94,5 @@
         AOS.init();
     </script>
 </body>
-
 
 </html>
