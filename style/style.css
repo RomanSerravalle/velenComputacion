@@ -124,14 +124,14 @@ h2 {
     text-shadow: 5px 10px 5px black;
 }
 
-.storeHeader{
+.storeHeader {
     text-align: center;
     padding: 0px;
     margin-bottom: 50px;
     overflow: hidden;
 }
 
-.storePicture{
+.storePicture {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
@@ -294,12 +294,12 @@ span {
     border-radius: 4px;
 }
 
-.fbFrame{
+.fbFrame {
     text-align: center;
     margin-top: 80px;
 }
 
-.fbFrame iframe{
+.fbFrame iframe {
     width: 60%;
     border-radius: 0.5cm;
 }
@@ -340,7 +340,9 @@ footer .text-light:hover {
 }
 
 
+
 /* TABLET */
+
 
 @media screen and (min-width: 576px) {
 
@@ -350,6 +352,7 @@ footer .text-light:hover {
         width: 100%;
         margin: auto;
     }
+
 
 
     /* products */
@@ -375,13 +378,15 @@ footer .text-light:hover {
     }
 
 
-/* contact */
+    /* contact */
 
-.fbFrame iframe{
-    width: 340px; 
+    .fbFrame iframe {
+        width: 340px;
+    }
+
 }
 
-}
+
 @media screen and (min-width: 768px) {
 
     h1 {
@@ -426,6 +431,7 @@ footer .text-light:hover {
         width: 70vw;
     }
 }
+
 
 /* DESKTOP */
 
@@ -474,7 +480,6 @@ footer .text-light:hover {
         width: 40vw;
         height: 60vh;
         margin: 20px;
-
     }
 
     /* about */
@@ -509,7 +514,7 @@ footer .text-light:hover {
         padding: 5px;
         margin: 20px 10px 0px 10px;
         border-radius: 4px;
-        width: 80%;
+        width: 30%;
     }
 
     .contactForm textarea {
