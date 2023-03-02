@@ -1,0 +1,38 @@
+
+
+footer {
+	color: black;
+	background: linear-gradient(0deg, $mintDarkColor 0%, $mintColor 61%, $mintColor 90%);
+	font-family: $fontRoboto;
+	margin-top: 8vw;
+	border: solid black;
+	padding: 40px;
+
+	a {
+		img {
+			transition: all 200ms ease-in-out;
+
+			&:hover {
+				transform: scale(1.4);
+			}
+		}
+	}
+
+	.display-6 {
+		font-weight: bolder;
+		transition: all 200ms ease-in-out;
+		padding: 10px;
+		border-radius: 0.5cm;
+
+		&:hover {
+			color: white;
+			background-color: $mintDarkColor;
+		}
+	}
+
+	.text-light {
+		&:hover {
+			transform: scale(1.5);
+		}
+	}
+}

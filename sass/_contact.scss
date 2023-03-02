@@ -1,0 +1,46 @@
+
+
+.contactForm {
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding: 20px;
+	width: 90vw;
+	border: solid $mintColor;
+	background-color: rgba(22, 22, 22, 0.5);
+	border-radius: 0.5cm;
+
+	legend {
+		font-size: 1.6rem;
+	}
+
+	input {
+		padding: 1vw;
+		margin: 20px 10px 0px 10px;
+		color: white;
+		width: 50vw;
+		background-color: rgb(22, 22, 22);
+		font-family: $fontMontserrat;
+		border-radius: 4px;
+	}
+
+	textarea {
+		padding: 5px;
+		margin-top: 5vh;
+		color: white;
+		width: 75vw;
+		background-color: rgb(22, 22, 22);
+		font-family: $fontMontserrat;
+		border-radius: 4px;
+	}
+}
+
+.fbFrame {
+	text-align: center;
+	margin-top: 80px;
+
+	iframe {
+		width: 60%;
+		border-radius: 0.5cm;
+	}
+}

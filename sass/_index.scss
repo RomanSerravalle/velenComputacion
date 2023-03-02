@@ -1,0 +1,57 @@
+
+
+body {
+	color: white;
+	background: linear-gradient(90deg, rgb(34, 34, 34) 0%, rgb(92, 92, 92) 100%);
+	padding: 10px;
+}
+
+.bigVelenLogo {
+	text-align: center;
+	margin-bottom: 50px;
+
+	img {
+		height: 85%;
+		width: 85%;
+	}
+}
+
+h1 {
+	margin: 25px 0px 25px 0px;
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+	text-align: center;
+	margin: 0px 25px 0px 25px;
+}
+
+.brandsSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	div {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 0px 1vw 0px 1vw;
+		margin-top: 10vw;
+
+		img {
+			width: 25%;
+			height: 25%;
+			padding: 1vw;
+			margin: 0 auto;
+			margin-bottom: 40px;
+			filter: drop-shadow(5px 5px 5px rgb(24, 24, 24));
+			transition: all 0.5s;
+			border-radius: 0.5cm;
+
+			&:hover {
+				background-color: rgb(126, 126, 126);
+			}
+		}
+	}
+}

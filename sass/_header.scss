@@ -1,0 +1,38 @@
+header {
+	background: linear-gradient(180deg, $mintDarkColor 0%, $mintColor 61%, $mintColor 90%);
+	border: 3px solid black;
+	text-align: center;
+
+	img {
+		width: 150px;
+	}
+}
+
+.nav-item {
+	list-style-type: none;
+	margin: 10px 10px 20px 20px;
+	font-weight: bold;
+	font-size: 25px;
+	padding: 10px;
+}
+
+.nav-link {
+	border-radius: 0.2cm;
+
+	&:hover {
+		color: $mintColor;
+		background-color: $mintDarkColor;
+		transition: 300ms ease;
+	}
+}
+
+.active {
+	&:hover {
+		color: $mintColor;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0, 58, 39);
+}
