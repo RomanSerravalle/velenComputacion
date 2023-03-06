@@ -33,11 +33,10 @@ h2 {
 	align-items: center;
 
 	div {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
+		@include flexRow;
 		margin: 0px 1vw 0px 1vw;
 		margin-top: 10vw;
+	}
 
 		img {
 			width: 25%;
@@ -53,5 +52,4 @@ h2 {
 				background-color: rgb(126, 126, 126);
 			}
 		}
-	}
 }

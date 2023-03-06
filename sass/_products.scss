@@ -13,12 +13,10 @@
 	justify-items: center;
 
 	div {
+		@include flexRow;
 		width: 80vw;
 		height: 35vh;
-		display: flex;
 		margin: 20px 0px 0px 0px;
-		justify-content: center;
-		align-items: center;
 		font-size: 1.7rem;
 		text-shadow: 5px 10px 5px black;
 		color: white;
