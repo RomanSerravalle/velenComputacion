@@ -1,9 +1,26 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap";
+h1 {
+  margin: 25px 0px 25px 0px;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0px 25px 0px 25px;
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: white;
+  background: linear-gradient(90deg, rgb(34, 34, 34) 0%, rgb(92, 92, 92) 100%);
+  padding: 10px;
 }
 
 header {
@@ -41,12 +58,6 @@ a {
   color: rgb(0, 58, 39);
 }
 
-body {
-  color: white;
-  background: linear-gradient(90deg, rgb(34, 34, 34) 0%, rgb(92, 92, 92) 100%);
-  padding: 10px;
-}
-
 .bigVelenLogo {
   text-align: center;
   margin-bottom: 50px;
@@ -56,20 +67,10 @@ body {
   width: 85%;
 }
 
-h1 {
-  margin: 25px 0px 25px 0px;
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin: 0px 25px 0px 25px;
-}
-
 .brandsSection {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .brandsSection div {
@@ -146,6 +147,7 @@ h2 {
   align-items: center;
   width: 80vw;
   height: 35vh;
+  display: flex;
   margin: 20px 0px 0px 0px;
   font-size: 1.7rem;
   text-shadow: 5px 10px 5px black;
@@ -271,11 +273,10 @@ span {
 }
 
 footer {
-  color: black;
   background: linear-gradient(0deg, rgb(24, 100, 77) 0%, rgb(161, 255, 227) 61%, rgb(161, 255, 227) 90%);
+  border: 3px solid black;
   font-family: "Roboto", sans-serif;
   margin-top: 8vw;
-  border: solid black;
   padding: 40px;
 }
 footer a img {
@@ -393,8 +394,8 @@ footer .text-light:hover {
     font-size: 2rem;
   }
   .aboutText p {
-    width: 70%;
-    font-size: 1.7rem;
+    width: 60%;
+    font-size: 1.5rem;
     margin-bottom: 48px;
   }
   .aboutMap {

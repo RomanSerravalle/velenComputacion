@@ -8,14 +8,20 @@
 	margin: 0 auto;
 	width: 100%;
 	display: grid;
-	grid-template-areas: "pc pc""gpu gpu""cpu cpu""mother mother""storage storage""peri peri";
+	grid-template-areas: "pc pc"
+	"gpu gpu"
+	"cpu cpu"
+	"mother mother"
+	"storage storage"
+	"peri peri";
 	grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh;
 	justify-items: center;
 
 	div {
-		@include flexRow;
+		@include flexRow (row, center, center);
 		width: 80vw;
 		height: 35vh;
+		display: flex;
 		margin: 20px 0px 0px 0px;
 		font-size: 1.7rem;
 		text-shadow: 5px 10px 5px black;

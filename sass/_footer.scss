@@ -1,11 +1,9 @@
 
 
 footer {
-	color: black;
-	background: linear-gradient(0deg, $mintDarkColor 0%, $mintColor 61%, $mintColor 90%);
+	@include mintGradient(0deg);
 	font-family: $fontRoboto;
 	margin-top: 8vw;
-	border: solid black;
 	padding: 40px;
 
 	a {

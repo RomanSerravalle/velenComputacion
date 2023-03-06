@@ -1,6 +1,5 @@
 header {
-	background: linear-gradient(180deg, $mintDarkColor 0%, $mintColor 61%, $mintColor 90%);
-	border: 3px solid black;
+@include mintGradient (180deg);
 	text-align: center;
 
 	img {
