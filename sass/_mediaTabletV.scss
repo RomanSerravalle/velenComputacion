@@ -7,10 +7,28 @@
 		font-size: 2rem;
 	}
 
+
+	/* Services */
+
 	.px-wide {
 		width: 100%;
 		margin: auto;
 	}
+
+
+	/* Products */
+
+	.productGrid {
+		grid-template-rows: 55vh 55vh 55vh 55vh 55vh 55vh;
+
+		div {
+			width: 80vw;
+			height: 50vh;
+			font-size: 2.5rem;
+		}
+	}
+
+	/* About */
 
 	.aboutText {
 		p {
@@ -18,16 +36,6 @@
 			width: 90%;
 			font-size: 1.3rem;
 		}
-	}
-
-	.productGrid {
-		div {
-			width: 80vw;
-			height: 50vh;
-			font-size: 2.5rem;
-		}
-
-		grid-template-rows: 55vh 55vh 55vh 55vh 55vh 55vh;
 	}
 
 	.aboutMap {

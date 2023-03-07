@@ -147,7 +147,6 @@ a {
   align-items: center;
   width: 80vw;
   height: 35vh;
-  display: flex;
   margin: 20px 0px 0px 0px;
   font-size: 1.7rem;
   text-shadow: 5px 10px 5px black;
@@ -306,15 +305,12 @@ footer .text-light:hover {
   h2 {
     font-size: 2rem;
   }
+  /* Services */
   .px-wide {
     width: 100%;
     margin: auto;
   }
-  .aboutText p {
-    font-size: 2.5rem;
-    width: 90%;
-    font-size: 1.3rem;
-  }
+  /* Products */
   .productGrid {
     grid-template-rows: 55vh 55vh 55vh 55vh 55vh 55vh;
   }
@@ -322,6 +318,12 @@ footer .text-light:hover {
     width: 80vw;
     height: 50vh;
     font-size: 2.5rem;
+  }
+  /* About */
+  .aboutText p {
+    font-size: 2.5rem;
+    width: 90%;
+    font-size: 1.3rem;
   }
   .aboutMap {
     height: 65vh;
@@ -337,6 +339,7 @@ footer .text-light:hover {
   h2 {
     font-size: 2.5rem;
   }
+  /* Products */
   .productGrid {
     gap: 3vw;
     margin: 0 auto;
@@ -353,6 +356,7 @@ footer .text-light:hover {
     margin: 20px;
     font-size: 2.3rem;
   }
+  /* About */
   .aboutText p {
     width: 80%;
     font-size: 1.5rem;
@@ -370,6 +374,7 @@ footer .text-light:hover {
   h2 {
     font-size: 3rem;
   }
+  /* Index */
   .brandsSection div {
     margin: 30px 30px;
   }
@@ -380,6 +385,7 @@ footer .text-light:hover {
     margin: 0 auto;
     border-radius: 1cm;
   }
+  /* Services */
   .px-wide {
     width: 75%;
     margin: auto;
@@ -387,12 +393,14 @@ footer .text-light:hover {
   .carousel-inner {
     border-radius: 1cm;
   }
+  /* Products */
   .productGrid div {
     width: 40vw;
     height: 60vh;
     margin: 20px;
     font-size: 2rem;
   }
+  /* About */
   .aboutText p {
     width: 70%;
     font-size: 1.7rem;
@@ -401,6 +409,7 @@ footer .text-light:hover {
   .aboutMap {
     width: 60vw;
   }
+  /* Contact */
   .contactForm {
     width: 60vw;
     padding: 50px;
