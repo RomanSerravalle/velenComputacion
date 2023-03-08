@@ -16,6 +16,10 @@
 		@include flexRow (row, center, center);
 		margin: 0px 1vw 0px 1vw;
 		margin-top: 10vw;
+
+		@include desktop {
+			margin: 30px 30px;
+		}
 	}
 
 		img {
@@ -27,6 +31,14 @@
 			filter: drop-shadow(5px 5px 5px rgb(24, 24, 24));
 			transition: all 0.5s;
 			border-radius: 0.5cm;
+
+			@include desktop {
+				width: 20%;
+				height: 20%;
+				padding: 20px;
+				margin: 0 auto;
+				border-radius: 1cm;
+			}
 
 			&:hover {
 				background-color: rgb(126, 126, 126);

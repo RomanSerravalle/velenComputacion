@@ -17,6 +17,21 @@
 	grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh;
 	justify-items: center;
 
+	@include tabletV{
+		grid-template-rows: 55vh 55vh 55vh 55vh 55vh 55vh;
+	}
+
+	@include tabletH{
+		gap: 3vw;
+		margin: 0 auto;
+		width: 90%;
+		display: grid;
+		justify-content: center;
+		grid-template-areas: "pc gpu""cpu mother""storage peri";
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 60vh 60vh 60vh;
+	}
+
 	div {
 		@include flexRow (row, center, center);
 		width: 80vw;
@@ -27,6 +42,26 @@
 		color: white;
 		font-family: $fontMontserrat;
 		transition: all 0.5s;
+
+		@include tabletV{
+			width: 80vw;
+			height: 50vh;
+			font-size: 2.5rem;
+		}
+
+		@include tabletH{
+			width: 45vw;
+			height: 60vh;
+			margin: 20px;
+			font-size: 2.3rem;
+		}
+
+		@include desktop {
+			width: 40vw;
+			height: 60vh;
+			margin: 20px;
+			font-size: 2rem;
+		}
 
 		&:hover {
 			transform: scale(1.2);

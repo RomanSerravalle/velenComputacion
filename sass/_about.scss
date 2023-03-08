@@ -6,6 +6,23 @@
 		width: 95%;
 		font-size: 1.1rem;
 		font-family: $fontMontserrat;
+
+		@include tabletV{
+			font-size: 2.5rem;
+			width: 90%;
+			font-size: 1.3rem;
+		}
+
+		@include tabletH{
+			width: 80%;
+			font-size: 1.5rem;
+		}
+
+		@include desktop{
+			width: 70%;
+			font-size: 1.7rem;
+			margin-bottom: 48px;
+		}
 	}
 
 	h1 {
@@ -26,6 +43,19 @@
 	display: block;
 	border: 3px solid $mintColor;
 	border-radius: 1cm;
+
+	@include tabletV{
+		height: 65vh;
+	}
+
+	@include tabletH{
+		height: 65vh;
+		width: 70vw;
+	}
+
+	@include desktop{
+		width: 60vw;
+	}
 }
 
 span {
